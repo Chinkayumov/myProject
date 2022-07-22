@@ -1,11 +1,11 @@
-<input value='Chin' class='first-name default input' id='first-name' />
-<input value='Kayum' class='last-name default input' id='last-name' />
-<input value='Kazan city' class='address default input' id='address' />
+<input value='Chin' title = 'name' class='first-name default-input' id='first-name' />
+<input value='Kayum' class='last-name default-input' id='last-name' />
+<input value='Kazan city' class='address default-input' id='address' />
 
 
 <textarea  id='hobbies'>JS,CSS,HTML</textarea>
 <select id= 'cities'>
-    <option selected= 'selected'>Kiev</option>
+    <option >Kiev</option>
     <option  >Minsc</option>
     <option>Kazan</option>
 
@@ -27,12 +27,24 @@
     var firstNameEl = document.getElementById(firstNameId);
     var lastNameEl  = document.getElementById(lastNameId);
     var addressEl = document.getElementById(addressId);
-    var sitiesEl = document.getElementById(citiesId);
+    var citiesEl = document.getElementById(citiesId);
     var hobbiesEl = document.getElementById(hobbiesId);
     var avatarWrapperEl = document.getElementById(avatarWrapperId);
     var avatarEl = document.getElementById(avatarId);
+    avatarEl.src = 'https://i.pinimg.com/originals/9c/7a/8b/9c7a8b76e05790e99971b812f2e49ed0.jpg';
+    avatarEl.title = 'I am ava'
+    citiesEl.value = 'Kazan';
+    firstNameEl.value = 'Mud'
+    lastNameEl.title = 'last name'
+    hobbiesEl.value = 'ihiihhih';
+    lastNameEl.setAttribute('value', 'ak');
+    window.alert(lastNameEl.className)
 
+    
+    
 
+    lastNameEl.className = 'eror-input';
+    
     //window.alert(hobbiesEl.innerHTML);
 
     //window.alert(addressEl.className);
@@ -42,5 +54,24 @@
     //window.alert(lastNameEl.className);
     //window.alert(addressEl.value);
     //window.alert(citiesEl.value);
-    window.alert(avatarEl.alt); //undifined
+    //window.alert(avatarEl.alt); //undifined
+
+    // не забудьте установить для кнопки в html-е значение атрибута id='login'
+    var loginButton = document.getElementById('login');
+    loginButton.onclick = function() {
+
+   // вот здесь ваш код.
+
+};
+
     </script>
+
+    <style>
+        .default-input {
+            border: yellow 5px solid;
+            padding: 5px;
+        }
+        .eror-input {
+            border: red 1px solid;
+        }
+    </style>

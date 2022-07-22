@@ -1,0 +1,71 @@
+<form>
+
+    
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+
+
+    <p>Choose your sex</p>
+    <input type="radio" id="male" name="fav_sex" value="MALE">
+    <label for="male">MALE</label><br>
+    <input type="radio" id="female" name="fav_sex" value="FEMALE">
+    <label for="female">FEMALE</label><br>
+
+
+  </form>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <div>
+    <p>Choose your marital status</p>
+    <label>
+      <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Single</label>
+    <label>
+      <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Married</label>
+    
+  </div>
+  
+
+<div id='avatar-wrapper'>
+	<img id='avatar'class = 'ava' src='https://pp.userapi.com/c631924/v631924026/44d7/AiFmeYaLmTc.jpg' alt='аватар' />
+</div>
+
+<select id='cities'>
+	<option>Kazan</option>
+	<option>Spb</option>
+	<option>Moscow</option>
+</select>
+<div><p>About me</p><textarea id='About'>
+    I like JS</textarea></div>
+
+
+<style>
+    .ava {
+        width: 100px;
+    }
+</style>
+
+
+<script>
+             setTimeout(function(){
+                var lastNameEl = document.getElementById("fname");
+                firstNameEl.type = 'Andrey';
+                //   ВОТ СЮДА ВАШ КОД
+           }, 1000);
+    $("input:checkbox").on('click', function() {
+        var $box = $(this);
+      if ($box.is(":checked")) {
+        
+        var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+        $box.prop("checked", true);
+      } else {
+        $box.prop("checked", false);
+      }
+    });
+    </script>
