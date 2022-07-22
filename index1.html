@@ -1,0 +1,46 @@
+<input value='Chin' class='first-name default input' id='first-name' />
+<input value='Kayum' class='last-name default input' id='last-name' />
+<input value='Kazan city' class='address default input' id='address' />
+
+
+<textarea  id='hobbies'>JS,CSS,HTML</textarea>
+<select id= 'cities'>
+    <option selected= 'selected'>Kiev</option>
+    <option  >Minsc</option>
+    <option>Kazan</option>
+
+
+</select>
+<div id='avatar-wrapped'><img id='avatar' src='https://www.letu.ru/common/img/uploaded/skuImageFolder/HBS998979_mainGT.jpg'; alt = 'avatar' ></div>
+
+<script>
+
+
+    var firstNameId = 'first-name';
+    var lastNameId = 'last-name';
+    var addressId = 'address';
+    var citiesId = 'cities';
+    var hobbiesId = 'hobbies';
+    var avatarWrapperId = 'avatar-wrapper';
+    var avatarId = 'avatar';
+
+    var firstNameEl = document.getElementById(firstNameId);
+    var lastNameEl  = document.getElementById(lastNameId);
+    var addressEl = document.getElementById(addressId);
+    var sitiesEl = document.getElementById(citiesId);
+    var hobbiesEl = document.getElementById(hobbiesId);
+    var avatarWrapperEl = document.getElementById(avatarWrapperId);
+    var avatarEl = document.getElementById(avatarId);
+
+
+    //window.alert(hobbiesEl.innerHTML);
+
+    //window.alert(addressEl.className);
+    //window.alert(firstNameEl.value);
+    //window.alert(firstNameEl.className);
+    //window.alert(lastNameEl.value);
+    //window.alert(lastNameEl.className);
+    //window.alert(addressEl.value);
+    //window.alert(citiesEl.value);
+    window.alert(avatarEl.alt); //undifined
+    </script>

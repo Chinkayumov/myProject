@@ -1,0 +1,49 @@
+<input id='first-name' value='Chin' class='first-name-input' />
+<input id='last-name' value='Kayumov' class='last-name-input' />
+<input id='adress-name' value='Kazan' class='adress-name-input' />
+<select id='selectAdress'>
+    <option value = 'moscow'> moscow </option>
+    <option value='minsc' selected> minsc </option>
+    <option value='kiev'> kiev </option>
+</select>
+<textarea id = 'textHobby'>
+    1.wushu 2.islam 3.psycology
+</textarea>
+<div>
+    <img id='imgMyFoto' src = 'https://www.b17.ru/foto/uploaded/upl_1495488748_42262.jpg' alt = 'Chin' width="20px">
+</div>
+
+<script>
+	// находим элемент по айдишнику и  результат (найденный элемент) присваиваем переменной firstNameEl
+	var firstNameEl = document.getElementById('first-name');
+	// выводим в консоль значение атрибута value у найденного элемента	
+	console.log(firstNameEl.value);
+    console.log(firstNameEl.className);
+
+    var lastNameEl = document.getElementById('last-name')
+    console.log (lastNameEl.value)
+    console.log(lastNameEl.className)
+    var adressE1 = document.getElementById('adress')
+	console.log(adressE1.value)
+	//выводим в консоль значение атрибута value в элементе select c ID = selectAdres 
+	var selectAdressE1 = document.getElementById('selectAdress')
+	console.log(selectAdressE1.value)
+	//выводим в консоль значение атрибута value в элементе textarea c ID = textHobby
+	var textHobbyE1 = document.getElementById('textHobby')
+	console.log(textHobbyE1.value)
+	//выводим в консоль значение атрибута value в элементе img c ID = imgMyFoto, -----ошибка undefined т.к 
+	// value принимает только значения каторые можно ввести иливыбрать.
+	var imgMyFotoE1 = document.getElementById('imgMyFoto')
+	console.log(imgMyFotoE1.value)
+	//выводим в консоль значение innerHTML в элементе select c ID = selectAdres 
+	var selectAdresE1 = document.getElementById('selectAdres')
+	console.log(selectAdresE1.innerHTML)
+	//выводим в консоль значение атрибута alt в элементе img c ID = imgMyFoto
+	var imgMyFotoE1 = document.getElementById('imgMyFoto')
+	console.log(imgMyFotoE1.alt)
+	//выводим в консоль значение атрибута src в элементе img c ID = imgMyFoto
+	var imgMyFotoE1 = document.getElementById('imgMyFoto')
+	console.log(imgMyFotoE1.src)
+
+    windows.alert(firstNameEl.value);
+</script>
